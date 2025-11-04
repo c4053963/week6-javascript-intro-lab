@@ -10,9 +10,10 @@
       media="only screen and (min-width:720px)"
       href="css/desktop.css"
     />
-    <script>
-      console.dir(document);
-    </script>
+    <script src="js/main.js" defer></script>
+    <script src="js/onLoad.js" defer></script>
+    <script src="js/call.js"></script>
+    <script src="js/imageRotate.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -30,7 +31,7 @@
         <div class="content">
           <h2>Rotating Images</h2>
           <p>
-            <img src="" alt="Winter Gardens" id="myImages" />
+            <img src="images/view1.jpg" alt="Winter Gardens" id="myImages" />
           </p>
           <p>
             Change Background colour: <span class="red colPicker">Red</span>,
@@ -39,7 +40,7 @@
             <span class="reset colPicker">Default</span>
           </p>
           <div>
-            <button id="myTestBtn">Test Button</button>
+            <button id="myTestBtn" clicked=false onclick="toggleButton('myTestBtn')">press me</button>
           </div>
         </div>
       </div>
